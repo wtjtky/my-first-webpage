@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- これがないとスマホで正しく縮小されません（おまじない） -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私の自己紹介</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        .profile-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            /* PCでは最大500px */
+        }
+
+        /* 🚫 バグ潜伏箇所 1: 画像がはみ出してしまうかも？ */
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            /* 🚫 バグ潜伏箇所 2: スキルが多くなったとき、画面外にはみ出さないようにするには？ */
+        }
+
+        .skill-badge {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+
+        /* 📱 スマホ用レスポンシブ対応（画面幅が600px以下の場合） */
+        @media (max-width: 600px) {
+
+            /* 📝 ミッション: スマホのときはカードの padding を 15px に減らしてください */
+            .profile-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+        <!-- 画像のURLはダミーです。お好きな画像URLに変えてもOK -->
+        <img src="https://picsum.photos/200" alt="プロフィール画像" class="profile-image">
+
+        <h1>名前：Takuya.W</h1>
+        <p>未経験からモダンWeb・iOSアプリエンジニアを目指して学習中です！</p>
+        <p>得意なこと：Excel関数（VLOOKUP, FILTER等）を駆使すること</p>
+
+        <h3>学習中のスキル</h3>
+        <div class="skills">
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Next.js</span>
+            <span class="skill-badge">Swift</span>
+            <span class="skill-badge">散歩</span>
+            <span class="skill-badge">読書</span>
+            <span class="skill-badge">筋トレ</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
