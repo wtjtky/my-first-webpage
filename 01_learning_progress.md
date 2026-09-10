@@ -58,11 +58,11 @@ Web基礎    →   モダンフロントエンド →  バックエンド/API  �
 - [x] Git とは何か（Excelで言う「変更履歴の記録 ＋ 名前を付けて保存」を自動化する仕組み）
 - [x] Git のインストールと初期設定（ユーザー名・メールアドレス）
 - [x] 基本操作: `git init` → `git add` → `git commit`（作業を保存する流れ）
-- [ ] `git log` で履歴を見る、`git diff` で差分を見る
-- [ ] GitHub アカウント作成とリポジトリ作成
-- [ ] `git push` / `git pull`（ローカルとGitHubの同期 ＝ Excelの「OneDrive同期」のようなもの）
+- [x] `git log` で履歴を見る、`git diff` で差分を見る
+- [x] GitHub アカウント作成とリポジトリ作成
+- [x] `git push` / `git pull`（ローカルとGitHubの同期 ＝ Excelの「OneDrive同期」のようなもの）
 - [ ] `.gitignore` の書き方（無視するファイルの指定）
-- [ ] 🎯 ミニ課題: Chapter 1-2 で作った自己紹介ページをGitHubに公開する
+- [x] 🎯 ミニ課題: Chapter 1-2 で作った自己紹介ページをGitHubに公開する
 
 ## Chapter 1-4: JavaScript 基礎 ― 変数・条件分岐・ループ（3〜4日）
 - [ ] 変数（let, const）＝ Excelの「セルに名前を付ける」こと
