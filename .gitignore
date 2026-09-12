@@ -1,0 +1,10 @@
+# OSが作成する一時ファイル
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ログファイル
+*.log
+
+# 一時メモ
+temp.txt
